@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SnapAway",
+  "version": "0.2.0",
+  "description": "Local pixel-disintegration camera prototype with MediaPipe vision.",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "action": { "default_title": "SnapAway", "default_popup": "popup.html" },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "content_scripts": [{ "matches": ["https://meet.google.com/*"], "js": ["meet-status.js"], "run_at": "document_idle" }]
+}

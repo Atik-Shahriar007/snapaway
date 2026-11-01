@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapAway · Local Prototype</title>
+  <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SNAPAWAY / STEP 1</p>
+      <h1>Local pixel disintegration</h1>
+      <p class="lede">A camera-only prototype. The current mask is an intentionally simple center-subject approximation; MediaPipe segmentation comes in the next step.</p>
+      <div class="actions">
+        <button id="start">Enable camera</button>
+        <button id="trigger" disabled>Trigger vanish</button>
+        <button id="restore" class="ghost" disabled>Restore</button>
+      </div>
+      <p id="status">Camera is off.</p>
+    </section>
+    <section class="stage">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="canvas"></canvas>
+      <div class="scanline"></div>
+    </section>
+  </main>
+  <script src="prototype.js"></script>
+</body>
+</html>

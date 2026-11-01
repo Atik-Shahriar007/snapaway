@@ -1,0 +1,14 @@
+{
+  "name": "snapaway-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone SnapAway desktop shell and native-camera boundary.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}
